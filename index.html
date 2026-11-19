@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lance Delos Santos – Software Engineering Student</title>
+<meta name="description" content="Portfolio of Lance E. Delos Santos, BS Computer Science (Software Engineering) student at FEU Institute of Technology.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f5; --surface:#ffffff; --ink:#14213d; --muted:#4f5d75;
+  --line:#c3ccd6; --route:#0e7c86; --stop:#e9a23b; --focus:#0e7c86;
+  --head:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1b2d; --surface:#17263c; --ink:#e8eef5; --muted:#a3b1c4; --line:#2d3f58; --route:#3fc1c9; --stop:#f0b45a; --focus:#3fc1c9;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{max-width:820px;margin:0 auto;padding:72px 24px 96px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+h2{font-size:1.9rem;font-weight:700;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:1.25rem;font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 12px;max-width:62ch}
+.lede{font-size:1.25rem;color:var(--muted);margin:20px 0 28px;max-width:44ch}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;border:2px solid var(--ink);text-decoration:none;font-weight:600}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--route)}
+.btn.primary:hover{background:var(--route);color:#fff}
+
+main{position:relative;padding-left:56px;margin-top:64px}
+.track{position:absolute;left:11px;top:0;bottom:0;width:3px;background:var(--line);border-radius:3px}
+.fill{position:absolute;left:0;top:0;width:100%;height:0;background:var(--route);border-radius:3px}
+.marker{position:absolute;left:-8px;top:0;width:19px;height:19px;border-radius:50%;background:var(--stop);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--stop);transform:translateY(-50%)}
+section{position:relative;padding-bottom:56px}
+section::before{content:"";position:absolute;left:-52px;top:10px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--route)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.meta{color:var(--muted);font-size:.95rem;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:0;list-style:none}
+.tags li{font-size:.9rem;font-weight:500;padding:3px 12px;border-radius:999px;border:1px solid var(--line)}
+.skills dt{font-family:var(--head);font-weight:700;margin-top:14px}
+.skills dd{margin:6px 0 0}
+.skills .tags{margin-top:6px}
+.certs{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.certs li{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
+.certs b{font-weight:600}
+.certs span{color:var(--muted)}
+footer{margin-top:8px;color:var(--muted);font-size:.95rem}
+
+@media (max-width:560px){
+  .wrap{padding-top:48px}
+  main{padding-left:40px}
+  section::before{left:-36px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Lance E. Delos Santos</h1>
+    <p class="lede">Computer Science student building mobile and web apps with Flutter and JavaScript.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:lancedelossantos727@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/lancedelossantos" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- TODO: replace YOUR-USERNAME with your GitHub username -->
+      <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <main id="route">
+    <div class="track" aria-hidden="true"><div class="fill" id="fill"></div><div class="marker" id="marker"></div></div>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>FEU Institute of Technology</h3>
+        <p class="meta">Sampaloc, Philippines · August 2023 – Present</p>
+        <p>BS in Computer Science with Specialization in Software Engineering.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="card">
+        <h3>ByteSized</h3>
+        <p class="meta">Mobile image compression and decompression app · November 2025 – Present</p>
+        <p>A Flutter/Dart app that shrinks image files while preserving visual quality. It combines WebP lossy coding with deep lossy compression and residual-based reconstruction.</p>
+        <ul class="tags"><li>Flutter</li><li>Dart</li><li>WebP</li></ul>
+      </article>
+      <article class="card">
+        <h3>Roadfocus</h3>
+        <p class="meta">Themed focus timer · October 2026 – Present</p>
+        <p>A web-based focus timer where your session is a road trip. It has a custom SVG map with spline-generated routes, a camera that follows the moving marker, route stop tracking, and a trip history saved in localStorage.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SVG</li></ul>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <dl class="skills" style="margin:0">
+          <dt style="margin-top:0">Frontend</dt>
+          <dd><ul class="tags"><li>Flutter</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></dd>
+          <dt>Backend and databases</dt>
+          <dd><ul class="tags"><li>Java</li><li>C++</li><li>MySQL</li><li>Supabase</li><li>Dart</li><li>Python</li></ul></dd>
+          <dt>Tools and deployment</dt>
+          <dd><ul class="tags"><li>Git</li><li>GitHub</li></ul></dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li><div><b>PMI Project Management Ready</b><br><span>Project Management Institute</span></div><span>March 18, 2026</span></li>
+        <li><div><b>Using Git with Visual Studio</b><br><span>LinkedIn Learning</span></div><span>November 5, 2025</span></li>
+        <li><div><b>CCNA: Introduction to Networks</b><br><span>Cisco Networking Academy</span></div><span>September 8, 2025</span></li>
+        <li><div><b>Python</b><br><span>Information Technology Specialist</span></div><span>July 16, 2025</span></li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Secretariat Committee Officer</h3>
+        <p class="meta">FEU Tech ACM Student Chapter · 2023–2024</p>
+        <p>Managed event registration and participant attendance, documented events and organizational records, prepared meeting minutes, and assisted with attendance record keeping.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>Open to internships and collaborations.</p>
+      <p><a href="mailto:lancedelossantos727@gmail.com">lancedelossantos727@gmail.com</a><br>+63 995-171-2585</p>
+      <footer>© <span id="yr">2026</span> Lance E. Delos Santos</footer>
+    </section>
+  </main>
+</div>
+
+<script>
+(function(){
+  var main=document.getElementById('route'),fill=document.getElementById('fill'),marker=document.getElementById('marker');
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var ticking=false;
+  function update(){
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    var p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;
+    var h=main.offsetHeight*p;
+    fill.style.height=h+'px';
+    marker.style.top=h+'px';
+    ticking=false;
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(update);}}
+  window.addEventListener('scroll',req,{passive:true});
+  window.addEventListener('resize',req);
+  update();
+})();
+</script>
+</body>
+</html>
